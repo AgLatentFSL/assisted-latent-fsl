@@ -57,9 +57,10 @@
     .stack .b.on{background:#b9c3cd}
     .stack .b.hid{background:var(--hid-p);outline:2px solid var(--hid)}
     .stack .b.hid.on{background:var(--hid)}
-    .stack .b.pool{height:18px;background:var(--lav-p);outline:2px solid var(--lav);margin-bottom:4px}
+    .stack .b.pool{background:var(--lav-p);outline:2px solid var(--lav);margin-bottom:4px}
     .stack .b.pool.on{background:var(--lav)}
-    .stack .lb{position:absolute;right:-6px;transform:translateX(100%);font-size:.66rem;font-weight:700;font-family:'Google Sans',sans-serif;white-space:nowrap}
+    .stack .b.hid,.stack .b.pool{height:17px}
+    .stack .blbl{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;font-size:.64rem;line-height:1;font-weight:700;font-family:'Google Sans',sans-serif;white-space:nowrap;color:#fff!important;text-shadow:0 0 3px rgba(0,0,0,.35)}
     .stack-cap{font-size:.7rem;color:var(--muted);text-align:center;margin-top:.35rem;font-family:'Google Sans',sans-serif}
     .lanes{display:grid;gap:.6rem}
     .lane{display:grid;grid-template-columns:150px 1fr auto;gap:.7rem;align-items:center;border-radius:14px;padding:.55rem .7rem;transition:box-shadow .3s,transform .3s}
@@ -519,8 +520,8 @@ pip install -r requirements-release.txt     # Python 3.9, pinned versions of eve
   // Hero animation: a pulse climbs the encoder; the pooled lane lights at the top, the block-10 lane at block 10.
   (function(){
     var st = document.getElementById('stack'), L = 12, HB = 10, blocks = [];
-    for (var i=1;i<=L;i++){ var b=document.createElement('div'); b.className='b'+(i===HB?' hid':''); if(i===HB){ b.innerHTML='<span class="lb" style="color:var(--hid)">Block 10</span>'; } st.appendChild(b); blocks.push(b); }
-    var pool=document.createElement('div'); pool.className='b pool'; pool.innerHTML='<span class="lb" style="color:var(--lav)">Pooled output</span>'; st.appendChild(pool);
+    for (var i=1;i<=L;i++){ var b=document.createElement('div'); b.className='b'+(i===HB?' hid':''); if(i===HB){ b.innerHTML='<span class="blbl">Block 10</span>'; } st.appendChild(b); blocks.push(b); }
+    var pool=document.createElement('div'); pool.className='b pool'; pool.innerHTML='<span class="blbl">Pooled output</span>'; st.appendChild(pool);
     var laneB=document.getElementById('laneB'), laneP=document.getElementById('laneP');
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     function showLane(lane,on){ lane.classList.toggle('lit',on); lane.querySelectorAll('.ref,.ans').forEach(function(x){ x.classList.toggle('show',on); }); }

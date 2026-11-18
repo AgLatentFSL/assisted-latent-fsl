@@ -1,0 +1,67 @@
+{
+ "layer_pairs": {
+  "ResNet50": {
+   "pairs": 10,
+   "raw_p_below_0.05": 4,
+   "holm_within_below_0.05": 2,
+   "holm_global_below_0.05": 0,
+   "range_pp": 5.6
+  },
+  "ViT": {
+   "pairs": 10,
+   "raw_p_below_0.05": 0,
+   "holm_within_below_0.05": 0,
+   "holm_global_below_0.05": 0,
+   "range_pp": 1.6
+  },
+  "CLIP": {
+   "pairs": 10,
+   "raw_p_below_0.05": 0,
+   "holm_within_below_0.05": 0,
+   "holm_global_below_0.05": 0,
+   "range_pp": 2.6
+  },
+  "FLAVA": {
+   "pairs": 10,
+   "raw_p_below_0.05": 3,
+   "holm_within_below_0.05": 1,
+   "holm_global_below_0.05": 1,
+   "range_pp": 4.6
+  },
+  "SigLIP2": {
+   "pairs": 10,
+   "raw_p_below_0.05": 1,
+   "holm_within_below_0.05": 0,
+   "holm_global_below_0.05": 0,
+   "range_pp": 3.2
+  },
+  "Qwen3VL": {
+   "pairs": 10,
+   "raw_p_below_0.05": 0,
+   "holm_within_below_0.05": 0,
+   "holm_global_below_0.05": 0,
+   "range_pp": 0.6
+  },
+  "DINOv2": {
+   "pairs": 10,
+   "raw_p_below_0.05": 0,
+   "holm_within_below_0.05": 0,
+   "holm_global_below_0.05": 0,
+   "range_pp": 2.0
+  },
+  "BioCLIP": {
+   "pairs": 10,
+   "raw_p_below_0.05": 2,
+   "holm_within_below_0.05": 1,
+   "holm_global_below_0.05": 0,
+   "range_pp": 5.0
+  },
+  "DINOv3": {
+   "pairs": 10,
+   "raw_p_below_0.05": 3,
+   "holm_within_below_0.05": 2,
+   "holm_global_below_0.05": 0,
+   "range_pp": 5.8
+  }
+ }
+}

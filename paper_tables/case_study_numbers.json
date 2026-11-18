@@ -1,0 +1,123 @@
+{
+ "rule": "clear success: both pooled references of another class and VLM wrong, both hidden references of the query class and VLM right; clear failure: the opposite",
+ "counts_K2": {
+  "ResNet50": {
+   "clear_successes": 3,
+   "clear_failures": 1
+  },
+  "ViT": {
+   "clear_successes": 1,
+   "clear_failures": 0
+  },
+  "CLIP": {
+   "clear_successes": 3,
+   "clear_failures": 1
+  },
+  "FLAVA": {
+   "clear_successes": 1,
+   "clear_failures": 0
+  },
+  "SigLIP2": {
+   "clear_successes": 1,
+   "clear_failures": 0
+  },
+  "Qwen3VL": {
+   "clear_successes": 5,
+   "clear_failures": 1
+  }
+ },
+ "total_successes": 14,
+ "total_failures": 3,
+ "shown": [
+  {
+   "encoder": "Qwen3VL",
+   "block": 16,
+   "dataset": "DeepWeeds",
+   "query": "q096__Parthenium__20171025-082114-2",
+   "true": "Parthenium",
+   "pooled_refs": [
+    [
+     "images/20171102-123402-1.jpg",
+     "Parkinsonia"
+    ],
+    [
+     "images/20170727-165550-2.jpg",
+     "Prickly acacia"
+    ]
+   ],
+   "hidden_refs": [
+    [
+     "images/20171025-082727-2.jpg",
+     "Parthenium"
+    ],
+    [
+     "images/20171025-092037-2.jpg",
+     "Parthenium"
+    ]
+   ],
+   "pooled_answer": "Negative",
+   "hidden_answer": "Parthenium",
+   "kind": "Success"
+  },
+  {
+   "encoder": "FLAVA",
+   "block": 10,
+   "dataset": "Soybean Diseases",
+   "query": "q055__Septoria_Brown_Spot__43242",
+   "true": "Septoria Brown Spot",
+   "pooled_refs": [
+    [
+     "Bacterial Blight/42013.png",
+     "Bacterial Blight"
+    ],
+    [
+     "Bacterial Pustule/28914.png",
+     "Bacterial Pustule"
+    ]
+   ],
+   "hidden_refs": [
+    [
+     "Septoria Brown Spot/56366.png",
+     "Septoria Brown Spot"
+    ],
+    [
+     "Septoria Brown Spot/39311.png",
+     "Septoria Brown Spot"
+    ]
+   ],
+   "pooled_answer": "Potassium Deficiency",
+   "hidden_answer": "Septoria Brown Spot",
+   "kind": "Success"
+  },
+  {
+   "encoder": "Qwen3VL",
+   "block": 16,
+   "dataset": "Bean Leaf Lesions",
+   "query": "q072__Bean_Rust__bean_rust_train.199",
+   "true": "Bean Rust",
+   "pooled_refs": [
+    [
+     "Bean Rust/bean_rust_train.300.jpg",
+     "Bean Rust"
+    ],
+    [
+     "Bean Rust/bean_rust_train.274.jpg",
+     "Bean Rust"
+    ]
+   ],
+   "hidden_refs": [
+    [
+     "Angular Leaf Spot/angular_leaf_spot_train.0.jpg",
+     "Angular Leaf Spot"
+    ],
+    [
+     "Angular Leaf Spot/angular_leaf_spot_train.339.jpg",
+     "Angular Leaf Spot"
+    ]
+   ],
+   "pooled_answer": "Bean Rust",
+   "hidden_answer": "Angular Leaf Spot",
+   "kind": "Failure"
+  }
+ ]
+}

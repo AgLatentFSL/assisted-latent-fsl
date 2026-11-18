@@ -1,0 +1,22 @@
+/data/*
+data/*
+data
+.env
+#ignore all latex auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+#and sty files
+*.sty
+__pycache__/
+runs
+atlas
+figs/
+tables/
+*.log
+hf_release/
+reproduced/
+/appendix*.tex

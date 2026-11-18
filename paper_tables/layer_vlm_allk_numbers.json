@@ -1,0 +1,706 @@
+{
+ "n": 500,
+ "zero_shot": 51.2,
+ "conditions": 145,
+ "layer_comparisons": 120,
+ "holm_min": 0.1759286336810804,
+ "holm_significant": 0,
+ "by_K": {
+  "1": {
+   "pooled_mean": 53.0,
+   "pooled_min": 51.6,
+   "pooled_max": 54.2,
+   "best_hidden_mean": 53.93,
+   "best_hidden_min": 53.0,
+   "best_hidden_max": 56.00000000000001,
+   "gain_mean_pp": 0.93,
+   "encoders_hidden_higher": 5,
+   "layers_above_ci": 0,
+   "layers_below_ci": 0,
+   "layers_higher": 12,
+   "layers": 30
+  },
+  "2": {
+   "pooled_mean": 55.47,
+   "pooled_min": 53.8,
+   "pooled_max": 57.99999999999999,
+   "best_hidden_mean": 58.2,
+   "best_hidden_min": 55.400000000000006,
+   "best_hidden_max": 59.8,
+   "gain_mean_pp": 2.73,
+   "encoders_hidden_higher": 5,
+   "layers_above_ci": 7,
+   "layers_below_ci": 1,
+   "layers_higher": 20,
+   "layers": 30
+  },
+  "4": {
+   "pooled_mean": 61.63,
+   "pooled_min": 59.4,
+   "pooled_max": 63.4,
+   "best_hidden_mean": 64.0,
+   "best_hidden_min": 63.2,
+   "best_hidden_max": 64.8,
+   "gain_mean_pp": 2.37,
+   "encoders_hidden_higher": 6,
+   "layers_above_ci": 2,
+   "layers_below_ci": 0,
+   "layers_higher": 25,
+   "layers": 30
+  },
+  "8": {
+   "pooled_mean": 68.7,
+   "pooled_min": 66.2,
+   "pooled_max": 70.19999999999999,
+   "best_hidden_mean": 70.03,
+   "best_hidden_min": 68.60000000000001,
+   "best_hidden_max": 71.6,
+   "gain_mean_pp": 1.33,
+   "encoders_hidden_higher": 5,
+   "layers_above_ci": 0,
+   "layers_below_ci": 3,
+   "layers_higher": 13,
+   "layers": 30
+  }
+ },
+ "cells": {
+  "K1|ResNet50": {
+   "pooled": 52.6,
+   "best_block": 11,
+   "best": 53.6,
+   "delta": 1.0,
+   "ci": [
+    -2.0,
+    3.8
+   ],
+   "wl": [
+    30,
+    25
+   ],
+   "p": 0.5900533317766354,
+   "holm": 1.0,
+   "mean_of_five_delta": 0.16,
+   "mean_of_five_ci": [
+    -2.44,
+    2.72
+   ],
+   "layers_above": 2
+  },
+  "K1|ViT": {
+   "pooled": 54.2,
+   "best_block": 11,
+   "best": 53.400000000000006,
+   "delta": -0.8,
+   "ci": [
+    -3.2,
+    1.6
+   ],
+   "wl": [
+    16,
+    20
+   ],
+   "p": 0.617719317029696,
+   "holm": 1.0,
+   "mean_of_five_delta": -1.44,
+   "mean_of_five_ci": [
+    -3.88,
+    1.04
+   ],
+   "layers_above": 0
+  },
+  "K1|CLIP": {
+   "pooled": 51.6,
+   "best_block": 8,
+   "best": 53.0,
+   "delta": 1.4,
+   "ci": [
+    -1.6,
+    4.4
+   ],
+   "wl": [
+    33,
+    26
+   ],
+   "p": 0.4349928051221534,
+   "holm": 1.0,
+   "mean_of_five_delta": 0.28,
+   "mean_of_five_ci": [
+    -1.92,
+    2.48
+   ],
+   "layers_above": 2
+  },
+  "K1|FLAVA": {
+   "pooled": 51.8,
+   "best_block": 12,
+   "best": 53.0,
+   "delta": 1.2,
+   "ci": [
+    -0.4,
+    2.8
+   ],
+   "wl": [
+    11,
+    5
+   ],
+   "p": 0.210113525390625,
+   "holm": 1.0,
+   "mean_of_five_delta": -0.12,
+   "mean_of_five_ci": [
+    -2.32,
+    2.08
+   ],
+   "layers_above": 2
+  },
+  "K1|SigLIP2": {
+   "pooled": 53.8,
+   "best_block": 7,
+   "best": 54.6,
+   "delta": 0.8,
+   "ci": [
+    -2.2,
+    3.6
+   ],
+   "wl": [
+    29,
+    25
+   ],
+   "p": 0.6834892282353371,
+   "holm": 1.0,
+   "mean_of_five_delta": 0.08,
+   "mean_of_five_ci": [
+    -2.28,
+    2.48
+   ],
+   "layers_above": 2
+  },
+  "K1|Qwen3VL": {
+   "pooled": 54.0,
+   "best_block": 18,
+   "best": 56.00000000000001,
+   "delta": 2.0,
+   "ci": [
+    -1.0,
+    5.0
+   ],
+   "wl": [
+    34,
+    24
+   ],
+   "p": 0.2370471147627195,
+   "holm": 1.0,
+   "mean_of_five_delta": 0.8,
+   "mean_of_five_ci": [
+    -1.88,
+    3.48
+   ],
+   "layers_above": 4
+  },
+  "K2|ResNet50": {
+   "pooled": 53.8,
+   "best_block": 8,
+   "best": 57.99999999999999,
+   "delta": 4.2,
+   "ci": [
+    0.8,
+    7.6
+   ],
+   "wl": [
+    50,
+    29
+   ],
+   "p": 0.0238197928580012,
+   "holm": 1.0,
+   "mean_of_five_delta": 1.36,
+   "mean_of_five_ci": [
+    -1.32,
+    4.0
+   ],
+   "layers_above": 3
+  },
+  "K2|ViT": {
+   "pooled": 57.99999999999999,
+   "best_block": 10,
+   "best": 58.599999999999994,
+   "delta": 0.6,
+   "ci": [
+    -2.8,
+    3.8
+   ],
+   "wl": [
+    37,
+    34
+   ],
+   "p": 0.8125886494061619,
+   "holm": 1.0,
+   "mean_of_five_delta": 0.0,
+   "mean_of_five_ci": [
+    -3.04,
+    3.04
+   ],
+   "layers_above": 3
+  },
+  "K2|CLIP": {
+   "pooled": 56.2,
+   "best_block": 4,
+   "best": 55.400000000000006,
+   "delta": -0.8,
+   "ci": [
+    -4.4,
+    2.8
+   ],
+   "wl": [
+    41,
+    45
+   ],
+   "p": 0.746534382289058,
+   "holm": 1.0,
+   "mean_of_five_delta": -1.96,
+   "mean_of_five_ci": [
+    -4.68,
+    0.8
+   ],
+   "layers_above": 0
+  },
+  "K2|FLAVA": {
+   "pooled": 54.0,
+   "best_block": 10,
+   "best": 59.8,
+   "delta": 5.8,
+   "ci": [
+    2.4,
+    9.2
+   ],
+   "wl": [
+    54,
+    25
+   ],
+   "p": 0.0014660719473423,
+   "holm": 0.1759286336810804,
+   "mean_of_five_delta": 2.8,
+   "mean_of_five_ci": [
+    0.2,
+    5.48
+   ],
+   "layers_above": 5
+  },
+  "K2|SigLIP2": {
+   "pooled": 55.400000000000006,
+   "best_block": 11,
+   "best": 57.8,
+   "delta": 2.4,
+   "ci": [
+    -0.4,
+    5.4
+   ],
+   "wl": [
+    33,
+    21
+   ],
+   "p": 0.1336742353641052,
+   "holm": 1.0,
+   "mean_of_five_delta": 0.84,
+   "mean_of_five_ci": [
+    -1.68,
+    3.4
+   ],
+   "layers_above": 4
+  },
+  "K2|Qwen3VL": {
+   "pooled": 55.400000000000006,
+   "best_block": 16,
+   "best": 59.599999999999994,
+   "delta": 4.2,
+   "ci": [
+    1.0,
+    7.4
+   ],
+   "wl": [
+    43,
+    22
+   ],
+   "p": 0.0125025461364898,
+   "holm": 1.0,
+   "mean_of_five_delta": 3.84,
+   "mean_of_five_ci": [
+    1.2,
+    6.56
+   ],
+   "layers_above": 5
+  },
+  "K4|ResNet50": {
+   "pooled": 59.4,
+   "best_block": 8,
+   "best": 63.2,
+   "delta": 3.8,
+   "ci": [
+    0.4,
+    7.2
+   ],
+   "wl": [
+    47,
+    28
+   ],
+   "p": 0.0369549040273683,
+   "holm": 1.0,
+   "mean_of_five_delta": 1.72,
+   "mean_of_five_ci": [
+    -1.08,
+    4.56
+   ],
+   "layers_above": 5
+  },
+  "K4|ViT": {
+   "pooled": 63.4,
+   "best_block": 6,
+   "best": 64.8,
+   "delta": 1.4,
+   "ci": [
+    -2.2,
+    5.2
+   ],
+   "wl": [
+    47,
+    40
+   ],
+   "p": 0.5202915935750735,
+   "holm": 1.0,
+   "mean_of_five_delta": 0.84,
+   "mean_of_five_ci": [
+    -2.04,
+    3.68
+   ],
+   "layers_above": 4
+  },
+  "K4|CLIP": {
+   "pooled": 60.2,
+   "best_block": 7,
+   "best": 63.2,
+   "delta": 3.0,
+   "ci": [
+    -1.0,
+    7.0
+   ],
+   "wl": [
+    57,
+    42
+   ],
+   "p": 0.159069651881238,
+   "holm": 1.0,
+   "mean_of_five_delta": 2.04,
+   "mean_of_five_ci": [
+    -0.8,
+    4.8
+   ],
+   "layers_above": 5
+  },
+  "K4|FLAVA": {
+   "pooled": 62.2,
+   "best_block": 8,
+   "best": 64.60000000000001,
+   "delta": 2.4,
+   "ci": [
+    -1.0,
+    5.8
+   ],
+   "wl": [
+    45,
+    33
+   ],
+   "p": 0.2126828198508057,
+   "holm": 1.0,
+   "mean_of_five_delta": 1.56,
+   "mean_of_five_ci": [
+    -1.0,
+    4.16
+   ],
+   "layers_above": 5
+  },
+  "K4|SigLIP2": {
+   "pooled": 63.2,
+   "best_block": 5,
+   "best": 63.4,
+   "delta": 0.2,
+   "ci": [
+    -3.2,
+    3.6
+   ],
+   "wl": [
+    37,
+    36
+   ],
+   "p": 1.0,
+   "holm": 1.0,
+   "mean_of_five_delta": -0.48,
+   "mean_of_five_ci": [
+    -2.92,
+    1.88
+   ],
+   "layers_above": 1
+  },
+  "K4|Qwen3VL": {
+   "pooled": 61.4,
+   "best_block": 16,
+   "best": 64.8,
+   "delta": 3.4,
+   "ci": [
+    0.0,
+    6.8
+   ],
+   "wl": [
+    47,
+    30
+   ],
+   "p": 0.0675492514590267,
+   "holm": 1.0,
+   "mean_of_five_delta": 2.76,
+   "mean_of_five_ci": [
+    0.24,
+    5.4
+   ],
+   "layers_above": 5
+  },
+  "K8|ResNet50": {
+   "pooled": 66.2,
+   "best_block": 9,
+   "best": 68.8,
+   "delta": 2.6,
+   "ci": [
+    -1.0,
+    6.2
+   ],
+   "wl": [
+    49,
+    36
+   ],
+   "p": 0.1927604353415587,
+   "holm": 1.0,
+   "mean_of_five_delta": 0.48,
+   "mean_of_five_ci": [
+    -2.52,
+    3.56
+   ],
+   "layers_above": 3
+  },
+  "K8|ViT": {
+   "pooled": 69.0,
+   "best_block": 9,
+   "best": 70.19999999999999,
+   "delta": 1.2,
+   "ci": [
+    -2.6,
+    4.8
+   ],
+   "wl": [
+    46,
+    40
+   ],
+   "p": 0.5900356111485566,
+   "holm": 1.0,
+   "mean_of_five_delta": 0.24,
+   "mean_of_five_ci": [
+    -2.76,
+    3.32
+   ],
+   "layers_above": 2
+  },
+  "K8|CLIP": {
+   "pooled": 67.80000000000001,
+   "best_block": 8,
+   "best": 69.6,
+   "delta": 1.8,
+   "ci": [
+    -1.8,
+    5.4
+   ],
+   "wl": [
+    48,
+    39
+   ],
+   "p": 0.3911909653007535,
+   "holm": 1.0,
+   "mean_of_five_delta": -0.36,
+   "mean_of_five_ci": [
+    -3.0,
+    2.28
+   ],
+   "layers_above": 2
+  },
+  "K8|FLAVA": {
+   "pooled": 70.0,
+   "best_block": 12,
+   "best": 71.39999999999999,
+   "delta": 1.4,
+   "ci": [
+    -1.4,
+    4.4
+   ],
+   "wl": [
+    31,
+    24
+   ],
+   "p": 0.4187541882690154,
+   "holm": 1.0,
+   "mean_of_five_delta": -1.28,
+   "mean_of_five_ci": [
+    -3.72,
+    1.36
+   ],
+   "layers_above": 1
+  },
+  "K8|SigLIP2": {
+   "pooled": 70.19999999999999,
+   "best_block": 8,
+   "best": 68.60000000000001,
+   "delta": -1.6,
+   "ci": [
+    -4.8,
+    1.6
+   ],
+   "wl": [
+    31,
+    39
+   ],
+   "p": 0.4029630750460797,
+   "holm": 1.0,
+   "mean_of_five_delta": -2.64,
+   "mean_of_five_ci": [
+    -5.24,
+    -0.04
+   ],
+   "layers_above": 0
+  },
+  "K8|Qwen3VL": {
+   "pooled": 69.0,
+   "best_block": 16,
+   "best": 71.6,
+   "delta": 2.6,
+   "ci": [
+    -1.0,
+    6.2
+   ],
+   "wl": [
+    47,
+    34
+   ],
+   "p": 0.1820767469408431,
+   "holm": 1.0,
+   "mean_of_five_delta": 1.68,
+   "mean_of_five_ci": [
+    -1.32,
+    4.6
+   ],
+   "layers_above": 5
+  }
+ },
+ "cells_hidden_higher": 21,
+ "cells_total": 24,
+ "encoders_rising_with_K": {
+  "pooled": 6,
+  "best_hidden": 6
+ },
+ "by_dataset": {
+  "Bean Leaf Lesions": {
+   "zero_shot": 75.0,
+   "pooled": [
+    71.3,
+    70.7,
+    78.5,
+    84.5
+   ],
+   "best_hidden": [
+    71.8,
+    74.5,
+    78.0,
+    85.5
+   ]
+  },
+  "DeepWeeds": {
+   "zero_shot": 41.0,
+   "pooled": [
+    47.7,
+    54.0,
+    60.7,
+    68.5
+   ],
+   "best_hidden": [
+    48.7,
+    54.3,
+    63.7,
+    69.2
+   ]
+  },
+  "Mango Leaf Disease": {
+   "zero_shot": 66.0,
+   "pooled": [
+    68.8,
+    71.5,
+    73.2,
+    78.3
+   ],
+   "best_hidden": [
+    68.5,
+    71.7,
+    74.0,
+    79.7
+   ]
+  },
+  "Soybean Diseases": {
+   "zero_shot": 21.0,
+   "pooled": [
+    21.5,
+    27.0,
+    34.5,
+    44.3
+   ],
+   "best_hidden": [
+    23.2,
+    32.3,
+    42.5,
+    45.3
+   ]
+  },
+  "Soybean Seeds": {
+   "zero_shot": 53.0,
+   "pooled": [
+    55.7,
+    54.2,
+    61.3,
+    67.8
+   ],
+   "best_hidden": [
+    57.5,
+    58.2,
+    61.8,
+    70.5
+   ]
+  }
+ },
+ "hero_cells_encoder_dataset_budget": {
+  "higher": 78,
+  "equal": 17,
+  "lower": 25
+ },
+ "tokens": {
+  "zero_shot": 1278.5,
+  "by_K": {
+   "1": {
+    "pooled": 1415.7,
+    "best_hidden": 1415.8
+   },
+   "2": {
+    "pooled": 1557.7,
+    "best_hidden": 1557.9
+   },
+   "4": {
+    "pooled": 1841.9,
+    "best_hidden": 1842.2
+   },
+   "8": {
+    "pooled": 2409.9,
+    "best_hidden": 2410.3
+   }
+  }
+ },
+ "mean_of_five_positive": 16
+}

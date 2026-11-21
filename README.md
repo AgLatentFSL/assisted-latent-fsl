@@ -2,14 +2,14 @@
 
 Tirtho Roy, Ushashi Bhattacharjee, Adarsh Krishnamurthy, Soumik Sarkar (Iowa State University)
 
-[Project page](https://tirtho149.github.io/assisted-latent-fsl/) · [Paper (PDF)](https://tirtho149.github.io/assisted-latent-fsl/static/paper/paper.pdf) · [All runs (Hugging Face)](https://huggingface.co/datasets/tirtho149/assisted-latent-fsl-runs)
+[Project page](https://aglatentfsl.github.io/) · [Paper (PDF)](https://aglatentfsl.github.io/static/paper/paper.pdf) · [All runs (Hugging Face)](https://huggingface.co/datasets/tirtho149/assisted-latent-fsl-runs)
 
 Assisted few-shot learning retrieves the few-shot examples of a vision-language model (VLM) with the pooled output of a frozen image encoder. Assisted latent few-shot learning retrieves them with a hidden layer of the same encoder and keeps the reference bank, the prompt and the VLM unchanged. On five AgEval identification tasks, six encoders and the 1-, 2-, 4- and 8-shot settings (Claude Sonnet 5.5), the hidden layer gives higher accuracy in 21 of 24 combinations of encoder and shot count, with the same number of prompt tokens.
 
 ## Reproduce the paper's numbers (no VLM call)
 
 ```bash
-git clone https://github.com/tirtho149/assisted-latent-fsl && cd assisted-latent-fsl
+git clone https://github.com/AgLatentFSL/assisted-latent-fsl && cd assisted-latent-fsl
 python3.9 -m venv .venv && source .venv/bin/activate
 pip install -r requirements-release.txt
 ./reproduce.sh
@@ -57,6 +57,10 @@ Each run folder keeps its manifest or pre-registration (written before the test 
 ## Acknowledgment
 
 This code builds on the AgEval benchmark and the assisted few-shot learning pipeline of Muhammad Arbab Arshad et al. ([arbab-ml/AgEval](https://github.com/arbab-ml/AgEval)); their original README is kept as `README_AgEval.md`.
+
+## License
+
+The code is released under the MIT License (`LICENSE`). The runs, figures and tables are released under CC BY 4.0 (`LICENSE-DATA.md`). Dataset images are not redistributed and keep the licenses of their original sources.
 
 ## Citation
 
